@@ -324,6 +324,7 @@ footer div a img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
+    margin: auto;
 }
 
 .menu h1 {
@@ -369,6 +370,7 @@ footer div a img {
     width: 100%;
     max-width: 400px;
     text-align: center;
+    margin: auto;
 }
 
 .reserva-form h1 {
