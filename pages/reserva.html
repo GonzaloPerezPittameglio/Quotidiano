@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <h1>QUOTIDIANO</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">HOME</a></li>
@@ -20,24 +21,27 @@
         </nav>
     </header>
     <main>
-        <form action="">
-            <div>
-                <label for="">Nombre de la Persona que Reserva</label>
-                <input type="text" placeholder="Escribi tu nombre">
-            </div>
+        <form class="reserva-form">
+            <h1>Reserva tu Mesa</h1>
+    
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+    
+            <label for="people">Cantidad de Personas</label>
+            <select id="people" name="people" required>
+                <option value="" disabled selected>Selecciona una cantidad</option>
+                <option value="1">1 Persona</option>
+                <option value="2">2 Personas</option>
+                <option value="3">3 Personas</option>
+                <option value="4">4 Personas</option>
+                <option value="5+">5 o más Personas</option>
+            </select>
+    
+            <label for="date">Fecha</label>
+            <input type="date" id="date" name="date" required>
+    
+            <button type="submit">Reservar</button>
         </form>
-        <form action="">
-            <div>
-                <label for="">Cantidad de Personas</label>
-                <input type="text" placeholder="Pesonas que asistiran">
-            </div>
-            <form action="">
-                <div>
-                    <label for="">Fecha</label>
-                <input type="email" placeholder="Elige una fecha"> 
-                </div>
-            </form>
-    </form>
     </main>
     <footer>
         <h2>QUOTIDIANO</h2>
