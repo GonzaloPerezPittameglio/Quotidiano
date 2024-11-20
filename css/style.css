@@ -557,7 +557,7 @@ input:focus {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #007BFF;
+    background-color: black;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -566,4 +566,41 @@ input:focus {
 
 .boton:hover {
     background-color: #0056b3;
+}
+
+/* - UBICACION DEL RESTAURANTE - */
+
+.ubicacion {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ubicacion h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.ubicacion p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.mapa iframe {
+    border: none;
+    border-radius: 8px;
+}
+
+address {
+    font-style: normal;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #555;
 }
