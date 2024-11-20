@@ -13,77 +13,138 @@
 
 <body>
     <header>
-        <h1>QUOTIDIANO</h1>
-        <nav> <!--BARRA DE NAVEGACION-->
-            <ul>
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./pages/menu.html">MENU</a></li>
-                <li><a href="./pages/reserva.html">RESERVAS</a></li>
-                <li><a href="./pages/ubicacion.html">UBICACION</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <!-- <div class="container-fluid"> -->
+                        <a class="navbar-brand" href="#">
+                            <h1>QUOTIDIANO</h1>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li><a href="../index.html">HOME</a></li>
+                                <li><a href="./pages/menu.html">MENU</a></li>
+                                <li><a href="./pages/reserva.html">RESERVAS</a></li>
+                                <li><a href="./pages/ubicacion.html">UBICACION</a></li>
+                                <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                            </ul>
+                        </div>
+                        <!-- </div> -->
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
     <main> <!--CONTENIDO PRINCIPAL-->
         <section class="hero">
-            <h2>Bienvenidos a Quotidiano</h2>
-            <p>Te ofrecemos una experiencia gastronómica centrada en la cocina tradicional con ingredientes de primera
-                calidad, especializados en pastas. Nuestra carta se complementa con una amplia y selecta bodega de vinos
-                de todo el mundo</p>
+            <div class="bienvenida">
+                <h2>Bienvenidos a Quotidiano</h2>
+                <p>Te ofrecemos una experiencia gastronómica centrada en la cocina tradicional con ingredientes de primera
+                    calidad, especializados en pastas.<br>Nuestra carta se complementa con una amplia y selecta bodega de vinos
+                    de todo el mundo</p>
+            </div>
         </section>
         <section class="platos">
-            <div>
-                <h2>Nuestra Propuesta Gastronómica</h2>
-                <p>La cocina tradicional está en el corazón de nuestra propuesta culinaria, que elaboramos con
-                    ingredientes de la más alta calidad.
-                    Nuestras pastas garantizan una auténtica y deliciosa experiencia gastronómica.
-                    Cada receta es una celebración de los sabores y técnicas que se han transmitido de generación en
-                    generación y reinventados con un toque moderno para satisfacer los paladares más exigentes.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h2>Nuestra Propuesta Gastronómica</h2>
+                        <p>La cocina tradicional está en el corazón de nuestra propuesta culinaria, que elaboramos con
+                            ingredientes de la más alta calidad.
+                            Nuestras pastas garantizan una auténtica y deliciosa experiencia gastronómica.
+                            Cada receta es una celebración de los sabores y técnicas que se han transmitido de generación en
+                            generación y reinventados con un toque moderno para satisfacer los paladares más exigentes.</p>
+                    </div>
+                    <div class="col-12 col-md-6 centrar-imagen">
+                        <img class="img-fluid" src="./img/plato de pastas.jpg" alt="">
+                    </div>
+                </div>
             </div>
-            <img src="./img/plato de pastas.jpg" alt="">
         </section>
         <section id="vinos">
             <div class="titulo">
-                <h2>VINOS</h2>
-                <a href=".//pages/menu.html">Carta Vinos</a>
+                <div class="titulo container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <h2>VINOS</h2>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="boton">
+                                <a href=".//pages/menu.html">
+                                    Carta Vinos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="contenedor-productos">
-                <div class="producto">
-                    <h3>VINOS TINTOS</h3>
-                    <img src="./img/malbec.jpg" alt="">
-                    <p>Este es un vino tinto</p>
-                </div>
-                <div class="producto">
-                    <h3>VINOS TINTOS</h3>
-                    <img src="./img/trivento.jpg" alt="">
-                    <p>Este es un vino tinto</p>
-                </div>
-                <div class="producto">
-                    <h3>VINOS BLANCOS</h3>
-                    <img src="./img/imagen 1.jpg" alt="">
-                    <p>Este es un vino blanco</p>
-                </div>
-                <div class="producto">
-                    <h3>VINOS BLANCOS</h3>
-                    <img src="./img/santajulia.jpg" alt="">
-                    <p>Este es un vino blanco</p>
-                </div>
-                <div class="producto">
-                    <h3>VINOS ROSADOS</h3>
-                    <img src="./img/vino rosado. jpg.jpg" alt="">
-                    <p>Este es un vino rosado</p>
-                </div>
-                <div class="producto">
-                    <h3>VINOS ROSADOS</h3>
-                    <img src="./img/dilema.jpg" alt="">
-                    <p>Este es un vino rosado</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-xl-2 col-sm-12">
+                            <div class="producto">
+                                <h3>VINOS TINTOS</h3>
+                                <img src="./img/malbec.jpg" alt="">
+                                <p>Este es un vino tinto</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-2  col-sm-12">
+                            <div class="producto">
+                                <h3>VINOS TINTOS</h3>
+                                <img src="./img/trivento.jpg" alt="">
+                                <p>Este es un vino tinto</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-2  col-sm-12">
+                            <div class="producto">
+                                <h3>VINOS BLANCOS</h3>
+                                <img src="./img/imagen 1.jpg" alt="">
+                                <p>Este es un vino blanco</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-2  col-sm-12">
+                            <div class="producto">
+                                <h3>VINOS BLANCOS</h3>
+                                <img src="./img/santajulia.jpg" alt="">
+                                <p>Este es un vino blanco</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-2  col-sm-12">
+                            <div class="producto">
+                                <h3>VINOS ROSADOS</h3>
+                                <img src="./img/vino rosado. jpg.jpg" alt="">
+                                <p>Este es un vino rosado</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-2  col-sm-12">
+                            <div class="producto">
+                                <h3>VINOS ROSADOS</h3>
+                                <img src="./img/dilema.jpg" alt="">
+                                <p>Este es un vino rosado</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="galeria">
-            <div class="titulo">
-                <h2>PLATOS PRINCIPALES</h2>
-                <a href=".//pages/menu.html">Carta Platos Principales</a>
+            <div class="titulo container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>PLATOS PRINCIPALES</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="boton">
+                            <a href=".//pages/menu.html">
+                                Carta Platos Principales
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="galeria-grid">
                 <div class="imagen-p plato-galeria1">
@@ -107,43 +168,81 @@
             </div>
         </section>
         <section id="postres">
-            <div class="titulo">
-                <h2>POSTRES</h2>
-                <a href=".//pages/menu.html">Carta Postres</a>
+            <div class="titulo container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>POSTRES</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="boton">
+                            <a href=".//pages/menu.html">
+                                Carta Postres
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="contenedor-productos">
-                <div class="producto">
-                    <h3>CHEESECAKE</h3>
-                    <div class="imagen-producto postre3">
-                    </div>
-                </div>
-                <div class="producto">
-                    <h3>FLAN NAPOLITANO</h3>
-                    <div class="imagen-producto postre2">
-                    </div>
-                </div>
-                <div class="producto">
-                    <h3>TIRAMISU</h3>
-                    <div class="imagen-producto postre1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="producto">
+                                <h3>CHEESECAKE</h3>
+                                <div class="imagen-postre postre3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="producto">
+                                <h3>FLAN NAPOLITANO</h3>
+                                <div class="imagen-postre postre2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="producto">
+                                <h3>TIRAMISU</h3>
+                                <div class="imagen-postre postre1">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="tragos">
-            <div class="titulo">
-                    <h2>TRAGOS</h2>
-                <a href="../proyecto-coder/pages/menu.html">Carta Tragos</a>
+            <div class="titulo container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>TRAGOS</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="boton">
+                            <a href=".//pages/menu.html">
+                                Carta Tragos
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="imagen-trago">
-                <img src="./img/tragos.jpg" alt="">
+                <img class="img-fluid" src="./img/tragos.jpg" alt="">
             </div>
         </section>
     </main>
-    <footer> <!--PIE DE PAGINA-->
-        <h2>QUOTIDIANO</h2>
-        <div>
-            <a href="https://www.instagram.com/il_quotidiano/?hl=es" target="_blank"><img src="./img/instagram.png" alt=""></a>
-            <a href="https://www.facebook.com/QuotidianoBA/?locale=es_LA" target="_blank"><img src="./img/facebook.png" alt=""></a>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h2>QUOTIDIANO</h2>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/il_quotidiano/?hl=es" target="_blank"><img src="../img/instagram.png" alt=""></a>
+                        <a href="https://www.facebook.com/QuotidianoBA/?locale=es_LA" target="_blank"><img src="../img/facebook.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
