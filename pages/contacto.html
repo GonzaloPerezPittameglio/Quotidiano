@@ -21,28 +21,24 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>SE PARTE DE NOSOTROS</h2>
-            <p>Enterate de nuestros nuevos platos, vinos y tragos</p>
+        <section class="contacto">
+            <h2>Se parte de nosotros</h2>
+            <form action="#" method="POST">
+                <div class="form-grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="ubicacion">¿De dónde sos?</label>
+                    <input type="text" id="ubicacion" name="ubicacion" placeholder="Tu ciudad o país" required>
+                </div>
+                <button type="submit" class="boton">Enviar</button>
+            </form>
         </section>
-        <form action="">
-            <div>
-                <label for="">Nombre</label>
-                <input type="text" placeholder="Escribi tu nombre">
-            </div>
-        <div>
-            <select name="" id="">
-                <label for="">Pais</label>
-                <option value="">Argentina</option>
-                <option value="">Uruguay</option>
-                <option value="">Chile</option>
-            </select>
-        </div>
-        <div>
-            <input type="submit" value="Enviar Formulario">
-            <input type="reset" value="Limpiar Formulario">
-        </div>
-        </form>
     </main>
     <footer>
         <h2>QUOTIDIANO</h2>
