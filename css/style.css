@@ -40,6 +40,14 @@ header nav ul li a {
     padding: 15px;
 }
 
+.link-activo{
+    background-color: black;
+}
+
+.link-activo a{
+    color: white !important;
+}
+
 /* - MAIN - */
 
 .hero {

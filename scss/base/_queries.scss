@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+    .hero {
+        height: calc(100vh - 96px);
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .titulo h2 {
+        font-size: 30px !important;
+    }
+    .boton {
+        width: 100% !important;
+        text-align: center;
+        margin-left: unset;
+    }
+    .titulo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    footer h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    footer .social-media {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu h1 {
+        font-size: 2em;
+        
+    }
+    
+    .menu p {
+        font-size: 1em;
+    }
+    
+    .menu h2 {
+        font-size: 1.5em;
+    }
+    
+    .menu h3 {
+        font-size: 1.2em;
+    }
+}
