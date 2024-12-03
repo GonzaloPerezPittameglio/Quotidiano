@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -80,6 +86,182 @@ body {
   }
 }
 
+.platos {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.platos h2 {
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.platos p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.platos .centrar-imagen {
+  text-align: center;
+}
+
+.titulo {
+  background-color: beige;
+  padding: 20px;
+}
+.titulo h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+.titulo .boton {
+  background-color: black;
+  width: fit-content;
+  padding: 10px;
+  margin-left: auto;
+}
+.titulo .boton a {
+  color: white;
+  text-decoration: none;
+}
+
+.contenedor-productos {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+}
+
+#vinos .producto {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border: solid;
+  border-width: thin;
+  margin: auto;
+}
+#vinos .producto h3 {
+  font-size: 23px;
+}
+#vinos .producto img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+#vinos .producto p {
+  font-size: 20px;
+}
+
+#galeria .galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 10px;
+}
+#galeria .galeria-grid .imagen-p {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+#galeria .galeria-grid .img2row {
+  grid-row: span 2;
+}
+#galeria .galeria-grid .img2column {
+  grid-column: span 2;
+}
+#galeria .galeria-grid .plato-galeria1 {
+  background-image: url("../img/plato1.jpg");
+}
+#galeria .galeria-grid .plato-galeria2 {
+  background-image: url("../img/plato4.jpg");
+}
+#galeria .galeria-grid .plato-galeria3 {
+  background-image: url("../img/plato5.jpg");
+}
+#galeria .galeria-grid .plato-galeria4 {
+  background-image: url("../img/plato6.jpg");
+}
+#galeria .galeria-grid .plato-galeria5 {
+  background-image: url("../img/plato3.webp");
+}
+#galeria .galeria-grid .plato-galeria6 {
+  background-image: url("../img/plato7.jpg");
+}
+
+#postres .producto {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border: solid;
+  border-width: thin;
+  margin: auto;
+}
+#postres .producto h3 {
+  font-size: 23px;
+}
+#postres .producto .imagen-postre {
+  background-size: cover;
+  background-position: center;
+  background-color: gray;
+  width: 100%;
+  height: 300px;
+}
+#postres .producto .postre3 {
+  background-image: url("../img/cheesecake.jpg");
+}
+#postres .producto .postre2 {
+  background-image: url("../img/flan napolitano.jpg");
+}
+#postres .producto .postre1 {
+  background-image: url("../img/tiramisu.jpg");
+}
+
+#tragos .imagen-trago {
+  text-align: center;
+}
+
+footer {
+  background-color: beige;
+  padding: 20px;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+footer h2 {
+  font-size: 3rem;
+  text-align: left;
+  font-weight: 900px;
+}
+@media (max-width: 768px) {
+  footer h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+footer .social-media {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  footer .social-media {
+    text-align: center;
+  }
+}
+footer .social-media a img {
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+}
+
 @media (max-width: 768px) {
   .hero {
     height: calc(100vh - 96px);
@@ -96,15 +278,6 @@ body {
     margin-left: unset;
   }
   .titulo {
-    text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  footer h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  footer .social-media {
     text-align: center;
   }
 }

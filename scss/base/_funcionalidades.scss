@@ -1,3 +1,68 @@
+//* VARIABLES
+
 $color-1: black ;
 $color-2: white;
 $color-3: beige;
+
+
+//* LISTAS 
+
+$colores: black, white, beige, green, gray;
+$font-size: 12px, 16px, 20px, 60px;
+
+// h1{
+//     font-size: nth($font-size, 3);
+//     color: nth($colores, 1);
+// }
+
+
+//* OPERACIONES
+//* + - * /
+
+//* $ancho:720px; 
+
+
+//* MAPAS
+//* No se va a usar en el proyecto 
+
+
+//* ENTENDS
+
+
+//* MIXIN 
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.contenedor{
+    @include flex (flex, space-around, center)
+}
+
+//* CONDICIONALES 
+//! OPERADORES DE COMPARACION 
+// = ASIGNACION
+// == IGUAL
+// === EXACTAMENTE IGUAL 
+// > MAYOR QUE 
+// < MENOR QUE 
+// >= MAYOR O IGUAL 
+// <= MENOR O IGUAL 
+// if (condicional){
+//     se ejecuta este codigo
+// } else {
+//     se ejecuta estre otro
+// }
+
+@mixin modo ($modo){
+    @if $modo == black{
+        border: solid 2px purple;
+    }@else{
+        border: solid 2px yellow;
+    }
+}
+
+//* BUCLES
+//* No se va a usar en el proyecto 
