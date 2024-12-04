@@ -186,13 +186,12 @@ header nav ul li a {
 .producto img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 10px;
 }
 
 .producto img:hover{
     transform: scale(1.2);
     cursor: pointer;
+    display: block;
 }
 
 .producto p {
@@ -229,6 +228,7 @@ header nav ul li a {
 .plato-galeria6 {
     background-image: url("../img/plato7.jpg");
 }
+
 
 .imagen-p {
     background-size: cover;
