@@ -318,7 +318,6 @@ header nav ul li a {
 }
 
 
-
 /* - TRAGOS - */
 
 .tragos a {
@@ -369,6 +368,11 @@ footer .social-media {
         text-align: center;
     }
 }
+
+/* footer a{
+    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+    text-decoration: none;
+} */
 
 footer a img {
     width: 60px;

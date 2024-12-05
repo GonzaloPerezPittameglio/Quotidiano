@@ -1,0 +1,60 @@
+.reserva-form {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    border: 2px solid black;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+
+    h1 {
+        font-size: 2em;
+        color: black;
+        margin-bottom: 10px;
+
+    }
+
+    label {
+        font-size: 1em;
+        color: #333;
+        display: block;
+        margin: 10px 0 5px;
+
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
