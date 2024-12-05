@@ -1,17 +1,17 @@
 footer {
-    background-color: beige;
+    background-color: $color-3;
     padding: 20px;
     justify-content: space-evenly;
     display: flex;
     align-items: center;
 
     h2 {
-        font-size: 3rem;
+        font-size: nth($font-size, 2);
         text-align: left;
         font-weight: 900px;
 
         @media (max-width: 768px) {
-            font-size: 2rem;
+            font-size: nth($font-size, 1);
             text-align: center;
         }
     }

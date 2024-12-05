@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#tragos .imagen-trago, #postres .producto, #vinos .producto, .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contenedor {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -39,12 +45,11 @@ body {
 }
 @media (max-width: 768px) {
   .header h1 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
 .header nav ul {
   list-style: none;
-  display: flex;
 }
 .header nav ul li {
   margin: 20px 15px 20px 15px;
@@ -64,13 +69,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .hero .bienvenida {
-  display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
@@ -88,16 +89,10 @@ body {
 
 .platos {
   margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .platos h2 {
   text-align: center;
   font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .platos p {
   font-size: 20px;
@@ -128,7 +123,6 @@ body {
 }
 
 .contenedor-productos {
-  display: flex;
   justify-content: space-evenly;
   padding: 20px;
   flex-direction: row;
@@ -138,13 +132,12 @@ body {
 
 #vinos .producto {
   font-family: "Poppins", sans-serif;
-  display: flex;
   flex-direction: column;
-  align-items: center;
   width: 250px;
   border: solid;
   border-width: thin;
   margin: auto;
+  overflow: hidden;
 }
 #vinos .producto h3 {
   font-size: 23px;
@@ -198,16 +191,14 @@ body {
 
 #postres .producto {
   font-family: "Poppins", sans-serif;
-  display: flex;
   flex-direction: column;
-  align-items: center;
   width: 250px;
   border: solid;
   border-width: thin;
   margin: auto;
 }
 #postres .producto h3 {
-  font-size: 23px;
+  font-size: 20px;
 }
 #postres .producto .imagen-postre {
   background-size: cover;
@@ -226,10 +217,6 @@ body {
   background-image: url("../img/tiramisu.jpg");
 }
 
-#tragos .imagen-trago {
-  text-align: center;
-}
-
 .menu {
   font-family: "Poppins", sans-serif;
   width: 90%;
@@ -237,7 +224,7 @@ body {
   background-color: #ffffff;
   border: 2px solid black;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px black 0, 0, 0, 0.2;
   padding: 20px;
   text-align: center;
   margin: auto;
@@ -245,7 +232,7 @@ body {
   margin-bottom: 20px;
 }
 .menu h1 {
-  font-size: 3em;
+  font-size: 3rem;
   margin-bottom: 10px;
   color: #b8860b;
   text-transform: uppercase;
@@ -253,21 +240,21 @@ body {
 }
 @media (max-width: 768px) {
   .menu h1 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
 .menu p {
   margin-bottom: 20px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: black;
 }
 @media (max-width: 768px) {
   .menu p {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 .menu h2 {
-  font-size: 2em;
+  font-size: 2rem;
   margin-top: 30px;
   margin-bottom: 10px;
   color: black;
@@ -275,17 +262,17 @@ body {
 }
 @media (max-width: 768px) {
   .menu h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 .menu h2 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin: 15px 0 5px;
   color: #6b4226;
 }
 @media (max-width: 768px) {
   .menu h2 h3 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 }
 
@@ -295,19 +282,19 @@ body {
   border: 2px solid black;
   width: 90%;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   padding: 20px;
   max-width: 400px;
   text-align: center;
   margin: auto;
 }
 .reserva-form h1 {
-  font-size: 2em;
+  font-size: 2rem;
   color: black;
   margin-bottom: 10px;
 }
 .reserva-form label {
-  font-size: 1em;
+  font-size: 1rem;
   color: #333;
   display: block;
   margin: 10px 0 5px;
@@ -318,7 +305,7 @@ body {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 select {
@@ -327,7 +314,7 @@ select {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 button {
@@ -341,26 +328,26 @@ button {
   color: white;
   border: none;
   cursor: pointer;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .ubicacion {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
   text-align: center;
 }
 .ubicacion h2 {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #444;
+  color: #333;
 }
 .ubicacion p {
   font-size: 16px;
-  color: #666;
+  color: #333;
   margin-bottom: 20px;
 }
 .ubicacion mapa iframe {
@@ -372,21 +359,21 @@ button {
   font-size: 14px;
   margin-top: 20px;
   line-height: 1.6;
-  color: #555;
+  color: gray;
 }
 
 .contacto {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7) 0, 0, 0, 0.1;
   border-radius: 8px;
   text-align: center;
 }
 .contacto h2 {
   font-size: 24px;
-  color: #333;
+  color: black;
   margin-bottom: 20px;
 }
 .contacto form {
@@ -400,26 +387,26 @@ button {
 .contacto .form-grupo label {
   display: block;
   font-size: 14px;
-  color: #666;
+  color: black;
   margin-bottom: 5px;
 }
 .contacto .form-grupo input {
   width: 100%;
   padding: 10px;
   font-size: 14px;
-  border: 1px solid #ddd;
+  border: 1px solid black;
   border-radius: 4px;
   outline: none;
 }
 .contacto .form-grupo b {
   padding: 10px 20px;
   font-size: 16px;
-  color: #fff;
+  color: white;
   background-color: black;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in-out;
 }
 
 footer {

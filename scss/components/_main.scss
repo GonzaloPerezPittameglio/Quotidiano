@@ -6,24 +6,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %center;
 
     .bienvenida {
-        display: flex;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: white;
+        background-color: $color-8;
+        color: $color-2;
         margin: 40px;
         padding: 20px;
 
         h2 {
-            font-size: 65px;
+            font-size: nth($font-size, 3);
 
             @media (max-width: 768px) {
-                font-size: 2rem;
+                font-size: nth($font-size, 1);
             }
         }
     }
@@ -32,22 +29,15 @@
 
 .platos {
     margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 
     h2 {
         text-align: center;
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: nth($font-size, 4);
 
     }
 
     p {
-        font-size: 20px;
+        font-size: nth($font-size, 5);
         margin-bottom: 20px;
         text-align: center;
 
@@ -60,22 +50,22 @@
 }
 
 .titulo {
-    background-color: beige;
+    background-color: $color-3;
     padding: 20px;
 
     h2 {
         font-family: "Poppins", sans-serif;
-        font-size: 40px;
+        font-size: nth($font-size, 4);
     }
 
     .boton {
-        background-color: black;
+        background-color: $color-1;
         width: fit-content;
         padding: 10px;
         margin-left: auto;
 
         a {
-            color: white;
+            color: $color-2;
             text-decoration: none;
         }
 
@@ -84,7 +74,6 @@
 }
 
 .contenedor-productos {
-    display: flex;
     justify-content: space-evenly;
     padding: 20px;
     flex-direction: row;
@@ -97,16 +86,16 @@
 
     .producto {
         font-family: "Poppins", sans-serif;
-        display: flex;
+        @extend %center;
         flex-direction: column;
-        align-items: center;
         width: 250px;
         border: solid;
         border-width: thin;
         margin: auto;
+        overflow: hidden;
 
         h3 {
-            font-size: 23px;
+            font-size: nth($font-size, 6);
         }
 
         img {
@@ -117,7 +106,7 @@
         }
 
         p {
-            font-size: 20px;
+            font-size: nth($font-size, 5);
         }
 
     }
@@ -180,23 +169,22 @@
 
     .producto {
         font-family: "Poppins", sans-serif;
-        display: flex;
         flex-direction: column;
-        align-items: center;
         width: 250px;
         border: solid;
         border-width: thin;
         margin: auto;
+        @extend %center;
 
         h3 {
-            font-size: 23px;
+            font-size: nth($font-size, 5);
 
         }
 
         .imagen-postre {
             background-size: cover;
             background-position: center;
-            background-color: gray;
+            background-color: $color-4;
             width: 100%;
             height: 300px;
         }
@@ -221,69 +209,7 @@
 #tragos {
 
     .imagen-trago {
-        text-align: center;
+        @extend %center;
     }
 
 }
-
-
-// MENU
-
-// .menu {
-//     font-family: "Poppins", sans-serif;
-//     width: 90%;
-//     max-width: 800px;
-//     background-color: #ffffff;
-//     border: 2px solid black;
-//     border-radius: 10px;
-//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-//     padding: 20px;
-//     text-align: center;
-//     margin: auto;
-//     margin-top: 20px;
-
-//     h1 {
-//         font-size: 3em;
-//         margin-bottom: 10px;
-//         color: #b8860b;
-//         text-transform: uppercase;
-//         letter-spacing: 2px;
-
-//         @media (max-width: 768px) {
-//             font-size: 2em;
-//         }
-//     }
-
-//     p {
-//         margin-bottom: 20px;
-//         font-size: 1.1em;
-//         color: black;
-
-//         @media (max-width: 768px) {
-//             font-size: 1em;
-//         }
-//     }
-
-//     h2 {
-//         font-size: 2em;
-//         margin-top: 30px;
-//         margin-bottom: 10px;
-//         color: black;
-//         text-decoration: underline;
-
-//         @media (max-width: 768px) {
-//             font-size: 1.5em;
-//         }
-
-//         h3 {
-//             font-size: 1.5em;
-//             margin: 15px 0 5px;
-//             color: #6b4226;
-
-//             @media (max-width: 768px) {
-//                 font-size: 1.2em;
-//             }
-//         }
-
-//     }
-// }

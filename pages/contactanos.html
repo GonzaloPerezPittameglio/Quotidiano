@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,11 @@
     <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link rel="stylesheet" href="../css/estilos.css">
     <!-- KEYWORDS (AL MENOS 18) -->
-    <meta name="keywords" content="restaurante,vinos selectos, platos tradicionales, empanadas artesanales, risootto cremoso, carnes premium, pastas caseras, coctelería exclusiv, caipiriñas refrescantes, aperol spritz, campari clásico, postres caseros, flan napolitano, tiramisú italiano, cheesecake suave, experiencia culinaria, ambiente elegante, gastronomía internacional, carta de vinos extensa, cena sofisticada ">
+    <meta name="keywords"
+        content="Contáctanos, Formulario de contacto, Nombre del cliente, Dirección de correo electrónico, Teléfono de contacto, Envía un mensaje, Deja tu opinión, Escríbenos aquí, Consulta rápida, Atención al cliente, Formulario para clientes, Feedback del restaurante, Contacto para reservas, Comentarios sobre el servicio, Preguntas y respuestas, Información de contacto, Envíanos tus dudas, Servicio al cliente">
     <!-- DESCRIPCION (AL MENOS 180 CARACTERES) -->
-    <meta name="description" content="">
+    <meta name="description"
+        content="Contáctanos dejando tu Nombre, E-Mail, tu número de teléfono y comentario. Envíanos tus consultas, dudas, opiniones o sugerencias para mejorar tu experiencia en nuestro Restaurante Gourmet.Contáctanos dejando tu Nombre, E-Mail, tu número de teléfono y comentario. Envíanos tus consultas, dudas, opiniones o sugerencias para mejorar tu experiencia en nuestro Restaurante Gourmet.">
     <!-- PROTOCOLO OPEN GRAPH -->
     <meta property="og:type" content="E-commerce">
     <meta property="og:tittle" content="QUOTIDIANO - Restaurante Gourmet">
@@ -25,6 +28,7 @@
     <link rel="shortcut icon" href="../img/favicon (2).ico" type="image/x-icon">
     <title>QUOTIDIANO</title>
 </head>
+
 <body>
     <header>
         <div class="container-fluid header">
@@ -35,7 +39,9 @@
                         <a class="navbar-brand" href="#">
                             <h1>QUOTIDIANO</h1>
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,7 +50,7 @@
                                 <li><a href="./menu.html">MENU</a></li>
                                 <li><a href="./reserva.html">RESERVAS</a></li>
                                 <li><a href="./ubicacion.html">UBICACION</a></li>
-                                <li class="link-activo"><a href="#">CONTACTO</a></li>
+                                <li class="link-activo"><a href="#">CONTACTANOS</a></li>
                             </ul>
                         </div>
                         <!-- </div> -->
@@ -55,7 +61,7 @@
     </header>
     <main>
         <section class="contacto">
-            <h2>Se parte de nosotros</h2>
+            <h2>Contáctanos</h2>
             <form action="#" method="POST">
                 <div class="form-grupo">
                     <label for="nombre">Nombre:</label>
@@ -69,20 +75,40 @@
                     <label for="ubicacion">¿De dónde sos?</label>
                     <input type="text" id="ubicacion" name="ubicacion" placeholder="Tu ciudad o país" required>
                 </div>
+                <div class="form-grupo">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+                </div>
+                <!-- <div class="casilla-mensaje">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5"
+                        required></textarea>
+                </div> SE AGREGARA PARA LA ENTREGA FINAL -->
                 <button type="submit" class="boton">Enviar</button>
             </form>
         </section>
     </main>
     <footer>
-        <h2>QUOTIDIANO</h2>
-        <div>
-            <a href="https://www.instagram.com/il_quotidiano/?hl=es" target="_blank"><img src="../img/instagram.png"
-                    alt=""></a>
-            <a href="https://www.facebook.com/QuotidianoBA/?locale=es_LA" target="_blank"><img src="../img/facebook.png"
-                    alt=""></a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h2>QUOTIDIANO</h2>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/il_quotidiano/?hl=es" target="_blank"><img
+                                src="../img/instagram.png" alt="Logo de Instagram"></a>
+                        <a href="https://www.facebook.com/QuotidianoBA/?locale=es_LA" target="_blank"><img
+                                src="../img/facebook.png" alt="Logo de Facebook"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

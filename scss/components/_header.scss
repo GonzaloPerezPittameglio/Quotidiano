@@ -1,21 +1,18 @@
 .header {
     background-color: $color-3;
     padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (flex, space-between, center);
 
 
     h1 {
         @media (max-width: 768px) {
-            font-size: 2em;
+            font-size: nth($font-size, 1);
         }
     }
 
     nav {
         ul {
             list-style: none;
-            display: flex;
 
             li {
                 margin: 20px 15px 20px 15px;
