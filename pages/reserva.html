@@ -11,9 +11,11 @@
     <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link rel="stylesheet" href="../css/estilos.css">
     <!-- KEYWORDS (AL MENOS 18) -->
-    <meta name="keywords" content="Reserva tu mesa, Cena para dos, Cena grupal, Fecha de reserva, Nombre y Apellido, Cantidad de personas, Resreva rapida, Confirmacion de reserva, Reserva personalizada, Mesa disponible, Reservar para cenar, Horario de reserva, Restaurante reserva, Reservar para evento, Cena especial, Mesa para cumpleaños, Mesa para Aniversario, Formulario de reserva, Reserva ahora">
+    <meta name="keywords"
+        content="Reserva tu mesa, Cena para dos, Cena grupal, Fecha de reserva, Nombre y Apellido, Cantidad de personas, Resreva rapida, Confirmacion de reserva, Reserva personalizada, Mesa disponible, Reservar para cenar, Horario de reserva, Restaurante reserva, Reservar para evento, Cena especial, Mesa para cumpleaños, Mesa para Aniversario, Formulario de reserva, Reserva ahora">
     <!-- DESCRIPCION (AL MENOS 180 CARACTERES) -->
-    <meta name="description" content="Reserva tu mesa indicando Nombre, Apellido, Cantidad de Comensales que se presentaran y Fecha. Disfruta una cena especial en nuestro Restaurante Gourmet con una experiencia personalizada.">
+    <meta name="description"
+        content="Reserva tu mesa indicando Nombre, Apellido, Cantidad de Comensales que se presentaran y Fecha. Disfruta una cena especial en nuestro Restaurante Gourmet con una experiencia personalizada.">
     <!-- PROTOCOLO OPEN GRAPH -->
     <meta property="og:type" content="E-commerce">
     <meta property="og:tittle" content="QUOTIDIANO - Restaurante Gourmet">
@@ -37,7 +39,9 @@
                         <a class="navbar-brand" href="#">
                             <h1>QUOTIDIANO</h1>
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
@@ -56,27 +60,30 @@
         </div>
     </header>
     <main>
-        <form class="reserva-form">
-            <h1>Reserva tu Mesa</h1>
+        <div class="reserva-form">
+            <form action="">
+                <h1>Reserva tu Mesa</h1>
 
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
 
-            <label for="people">Cantidad de Personas</label>
-            <select id="people" name="people" required>
-                <option value="" disabled selected>Selecciona una cantidad</option>
-                <option value="1">1 Persona</option>
-                <option value="2">2 Personas</option>
-                <option value="3">3 Personas</option>
-                <option value="4">4 Personas</option>
-                <option value="5+">5 o más Personas</option>
-            </select>
+                <label for="people">Cantidad de Personas</label>
+                <select id="people" name="people" required>
+                    <option value="" disabled selected>Selecciona una cantidad</option>
+                    <option value="1">1 Persona</option>
+                    <option value="2">2 Personas</option>
+                    <option value="3">3 Personas</option>
+                    <option value="4">4 Personas</option>
+                    <option value="5+">5 o más Personas</option>
+                </select>
 
-            <label for="date">Fecha</label>
-            <input type="date" id="date" name="date" required>
+                <label for="date">Fecha</label>
+                <input type="date" id="date" name="date" required>
 
-            <button type="submit">Reservar</button>
-        </form>
+                <button type="submit">Reservar</button>
+            </form>
+
+        </div>
     </main>
     <footer>
         <div class="container-fluid">
@@ -86,15 +93,19 @@
                 </div>
                 <div class="col-md-6 col-12">
                     <div class="social-media">
-                        <a href="https://www.instagram.com/il_quotidiano/?hl=es"><img src="../img/instagram.png" alt="Logo de Instagram"></a>
-                        <a href="https://www.facebook.com/QuotidianoBA/?locale=es_LA"><img src="../img/facebook.png" alt="Logo de Facebook"></a>
+                        <a href="https://www.instagram.com/il_quotidiano/?hl=es"><img src="../img/instagram.png"
+                                alt="Logo de Instagram"></a>
+                        <a href="https://www.facebook.com/QuotidianoBA/?locale=es_LA"><img src="../img/facebook.png"
+                                alt="Logo de Facebook"></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

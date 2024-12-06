@@ -24,5 +24,14 @@ body {
     a {
         color: white !important;
     }
+}
 
+.custom-card{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: $color-6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px $color-8;
+    text-align: center;
 }

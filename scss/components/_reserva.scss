@@ -1,14 +1,11 @@
 .reserva-form {
-    font-family: "Poppins", sans-serif;
-    background-color: $color-2;
-    border: 2px solid $color-1;
-    width: 90%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px $color-8;
+    max-width: 800px;
+    margin: 50px auto;
     padding: 20px;
-    max-width: 400px;
+    background-color: $color-6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px $color-8;
     text-align: center;
-    margin: auto;
 
     h1 {
         font-size: nth($font-size, 1);

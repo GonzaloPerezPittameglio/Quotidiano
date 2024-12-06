@@ -277,16 +277,13 @@ body {
 }
 
 .reserva-form {
-  font-family: "Poppins", sans-serif;
-  background-color: white;
-  border: 2px solid black;
-  width: 90%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  max-width: 800px;
+  margin: 50px auto;
   padding: 20px;
-  max-width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
   text-align: center;
-  margin: auto;
 }
 .reserva-form h1 {
   font-size: 2rem;
@@ -363,12 +360,11 @@ button {
 }
 
 .contacto {
-  max-width: 600px;
+  max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7) 0, 0, 0, 0.1;
-  border-radius: 8px;
+  background-color: #fff;    border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
   text-align: center;
 }
 .contacto h2 {

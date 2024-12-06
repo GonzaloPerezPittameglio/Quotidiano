@@ -1,10 +1,10 @@
 .contacto {
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: $color-2;
-    box-shadow: 0 4px 6px $color-8 (0, 0, 0, 0.1);
+    background-color: $color-6;
     border-radius: 8px;
+    box-shadow: 0 4px 6px $color-8;
     text-align: center;
 
     h2 {
@@ -32,7 +32,7 @@
 
         }
 
-        input {
+        input, textarea {
             width: 100%;
             padding: 10px;
             font-size: nth($font-size, 13);
@@ -53,7 +53,5 @@
 
         }
     }
-
-
-
 }
+
