@@ -387,21 +387,6 @@ footer a img {
 
 /* - MENU DEL RESTAURANTE - */
 
-.header {
-    background-color: beige;
-}
-
-.navbar-nav li {
-    margin: 6px 15px 6px 15px;
-    border: 2px solid black;
-}
-
-.navbar-nav li a {
-    text-decoration: none;
-    color: black;
-    padding: 15px;
-}
-
 .menu {
     font-family: "Poppins", sans-serif;
     width: 90%;
@@ -474,7 +459,7 @@ footer a img {
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
     text-align: center;
 }
