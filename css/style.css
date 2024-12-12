@@ -387,65 +387,48 @@ footer a img {
 
 /* - MENU DEL RESTAURANTE - */
 
-.menu {
-    font-family: "Poppins", sans-serif;
-    width: 90%;
-    max-width: 800px;
-    background-color: #ffffff;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-container {
+    width: 80%;
+    max-width: 900px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem;
 }
 
-.menu h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #b8860b;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.menu-section {
+    background-color: white; 
+    padding: 1.5rem;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
 }
 
-.menu p {
-    margin-bottom: 20px;
-    font-size: 1.1em;
-    color: black;
+.menu-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #d2b48c; /* Beige oscuro */
+    padding-bottom: 0.5rem;
 }
 
-.menu h2 {
-    font-size: 2em;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: black;
-    text-decoration: underline;
+.menu-section .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.menu h3 {
-    font-size: 1.5em;
-    margin: 15px 0 5px;
-    color: #6b4226;
-}
-
-@media (max-width: 768px) {
-    .menu h1 {
-        font-size: 2em;
-    }
-
-    .menu p {
-        font-size: 1em;
-    }
-
-    .menu h2 {
-        font-size: 1.5em;
-    }
-
-    .menu h3 {
-        font-size: 1.2em;
-    }
+.menu-section .item:hover {
+    transform: scale(1.05);
+    background-color: beige;
 }
 
 /* - RESERVA DEL RESTAURANTE - */
@@ -459,7 +442,7 @@ footer a img {
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: px;
+    border-radius: 1px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
     text-align: center;
 }
@@ -483,7 +466,7 @@ footer a img {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
     font-size: 1em;
 }
@@ -499,6 +482,8 @@ footer a img {
 .reserva-form button:hover {
     background-color: #b8860b;
 }
+
+
 
 /* - CONTACTO DEL RESTAURANTE - */
 
