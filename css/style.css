@@ -447,6 +447,10 @@ main {
     text-align: center;
 }
 
+.reserva-imagen{
+    background-image: url(../img/banner.jpg);
+}
+
 .reserva-form h1 {
     font-size: 2em;
     color: black;

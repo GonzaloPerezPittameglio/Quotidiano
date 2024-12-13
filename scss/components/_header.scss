@@ -3,6 +3,9 @@
     padding: 15px;
     @include flex (flex, space-between, center);
 
+    .row {
+        width: 100%;
+    }
 
     h1 {
         @media (max-width: 768px) {

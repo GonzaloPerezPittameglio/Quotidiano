@@ -25,10 +25,6 @@ body {
   justify-content: space-between;
 }
 
-.row {
-  width: 100%;
-}
-
 .link-activo {
   background-color: black;
 }
@@ -52,6 +48,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header .row {
+  width: 100%;
 }
 @media (max-width: 768px) {
   .header h1 {
@@ -228,6 +227,7 @@ body {
 }
 
 .menu-container {
+  width: 100%;
   display: grid;
   grid-template-rows: repeat(4, auto);
   gap: 1rem;
@@ -246,10 +246,9 @@ body {
   font-size: 1.1rem;
   padding: 0.5rem;
   border-radius: 4px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 .menu-container .menu-section .item:hover {
-  transform: scale(1.05);
   background-color: beige;
 }
 .menu-container h2 {
@@ -311,6 +310,10 @@ button {
   font-size: 1.1rem;
 }
 
+.encuentranos {
+  text-align: center;
+}
+
 .ubicacion {
   max-width: 800px;
   margin: 50px auto;
@@ -330,11 +333,12 @@ button {
   color: #333;
   margin-bottom: 20px;
 }
-.ubicacion mapa iframe {
+.ubicacion .mapa iframe {
   border: none;
   border-radius: 8px;
+  width: 100%;
 }
-.ubicacion addres {
+.ubicacion .addres {
   font-style: normal;
   font-size: 14px;
   margin-top: 20px;
