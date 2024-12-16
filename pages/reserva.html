@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--CSS-->
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/estilos.css"> -->
     <!-- KEYWORDS (AL MENOS 18) -->
     <meta name="keywords"
         content="Reserva tu mesa, Cena para dos, Cena grupal, Fecha de reserva, Nombre y Apellido, Cantidad de personas, Resreva rapida, Confirmacion de reserva, Reserva personalizada, Mesa disponible, Reservar para cenar, Horario de reserva, Restaurante reserva, Reservar para evento, Cena especial, Mesa para cumpleaños, Mesa para Aniversario, Formulario de reserva, Reserva ahora">
@@ -60,32 +60,49 @@
         </div>
     </header>
 
-    <main>
-        <div class="reserva-form">
-            <form action="">
-                <h1>Reserva tu Mesa</h1>
-
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="Escribe tu nombre..." required>
-
-                <label for="people">Cantidad de Personas</label>
-                <select id="people" name="people" required>
-                    <option value="" disabled selected>Selecciona una cantidad</option>
-                    <option value="1">1 Persona</option>
-                    <option value="2">2 Personas</option>
-                    <option value="3">3 Personas</option>
-                    <option value="4">4 Personas</option>
-                    <option value="5+">5 o más Personas</option>
-                </select>
-
-                <label for="date">Fecha</label>
-                <input type="date" id="date" name="date" required>
-
-                <button type="submit">Reservar</button>
-            </form>
-
+    <section id="reserva">
+        <h1>Reserva</h1>
+        <div id="botones-sucursales">
+            <button class="boton-sucursal" data-sucursal="Palermo">Sucursal de Palermo</button>
+            <button class="boton-sucursal" data-sucursal="Belgrano">Sucursal de Belgrano</button>
+            <button class="boton-sucursal" data-sucursal="Recoleta">Sucursal de Recoleta</button>
         </div>
-    </main>
+
+        <div id="formulario-reserva" class="oculto">
+            <h2 id="titulo-sucursal"></h2>
+            <div class="card">
+            <form>
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="text" placeholder="Tu apellido" required>
+                <input type="number" placeholder="Cantidad de personas" required>
+                <input type="date" required>
+                <button type="submit">Reserva</button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const botones = document.querySelectorAll('.boton-sucursal');
+        const formulario = document.getElementById('formulario-reserva');
+        const tituloSucursal = document.getElementById('titulo-sucursal');
+        const botonesSucursales = document.getElementById('botones-sucursales');
+
+        botones.forEach(boton => {
+            boton.addEventListener('click', () => {
+                const sucursal = boton.getAttribute('data-sucursal');
+                tituloSucursal.textContent = `Sucursal de ${sucursal}`;
+
+                // Ocultar botones
+                botonesSucursales.style.display = 'none';
+
+                // Mostrar formulario con animación
+                formulario.classList.remove('oculto');
+                formulario.style.display = 'block';
+                formulario.style.animation = 'aparecer 0.5s forwards';
+            });
+        });
+    </script>
 
     <footer>
         <div class="container-fluid">

@@ -374,11 +374,6 @@ footer .social-media {
     }
 }
 
-/* footer a{
-    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
-    text-decoration: none;
-} */
-
 footer a img {
     width: 60px;
     height: 60px;
@@ -412,7 +407,7 @@ main {
 .menu-section h2 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    border-bottom: 2px solid #d2b48c; /* Beige oscuro */
+    border-bottom: 2px solid #d2b48c; 
     padding-bottom: 0.5rem;
 }
 
@@ -433,61 +428,88 @@ main {
 
 /* - RESERVA DEL RESTAURANTE - */
 
-.reserva-form {
-    font-family: "Poppins", sans-serif;
-}
-
-.reserva-form {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 1px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
-    text-align: center;
-}
-
-.reserva-imagen{
-    background-image: url(../img/banner.jpg);
-}
-
-.reserva-form h1 {
-    font-size: 2em;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.reserva-form label {
-    font-size: 1em;
-    color: #333;
-    display: block;
-    margin: 10px 0 5px;
-}
-
-.reserva-form input,
-.reserva-form select,
-.reserva-form button {
+.boton-sucursal {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.reserva-form button {
-    background-color: #d4af37;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: black;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1.1em;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
-.reserva-form button:hover {
-    background-color: #b8860b;
+.boton-sucursal:hover {
+    background-color: rgba(189, 189, 189, 0.76);
 }
 
+#formulario-reserva {
+    display: none; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
 
+.card{
+    .card {
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding: 20px;
+        width: 280px;
+        text-align: center;
+    }
+}
+
+.oculto {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.boton-reservar {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-reservar:hover {
+    background-color: #218838;
+}
+
+/* Animaciones */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 /* - CONTACTO DEL RESTAURANTE - */
 
