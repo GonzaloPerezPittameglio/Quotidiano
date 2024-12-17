@@ -428,7 +428,20 @@ main {
 
 /* - RESERVA DEL RESTAURANTE - */
 
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .boton-sucursal {
+    display: block;
     width: 100%;
     margin: 10px 0;
     padding: 15px;
@@ -443,7 +456,7 @@ main {
 }
 
 .boton-sucursal:hover {
-    background-color: rgba(189, 189, 189, 0.76);
+    background-color: gray;
 }
 
 #formulario-reserva {
@@ -452,17 +465,6 @@ main {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-}
-
-.card{
-    .card {
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-        border-radius: 10px;
-        padding: 20px;
-        width: 280px;
-        text-align: center;
-    }
 }
 
 .oculto {
@@ -488,7 +490,7 @@ input {
 
 .boton-reservar {
     padding: 12px;
-    background-color: #28a745;
+    background-color: black;
     color: white;
     font-size: 1rem;
     border: none;
@@ -498,7 +500,7 @@ input {
 }
 
 .boton-reservar:hover {
-    background-color: #218838;
+    background-color: gray;
 }
 
 /* Animaciones */
@@ -510,6 +512,7 @@ input {
         opacity: 1;
     }
 }
+
 
 /* - CONTACTO DEL RESTAURANTE - */
 

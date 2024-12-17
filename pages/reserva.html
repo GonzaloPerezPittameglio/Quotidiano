@@ -61,24 +61,36 @@
     </header>
 
     <section id="reserva">
-        <h1>Reserva</h1>
+        <h1>Reserva tu Mesa:</h1>
         <div id="botones-sucursales">
-            <button class="boton-sucursal" data-sucursal="Palermo">Sucursal de Palermo</button>
-            <button class="boton-sucursal" data-sucursal="Belgrano">Sucursal de Belgrano</button>
-            <button class="boton-sucursal" data-sucursal="Recoleta">Sucursal de Recoleta</button>
+            <button class="boton-sucursal" data-sucursal="Palermo">Sucursal Palermo</button>
+            <button class="boton-sucursal" data-sucursal="Belgrano">Sucursal Belgrano</button>
+            <button class="boton-sucursal" data-sucursal="Recoleta">Sucursal Recoleta</button>
         </div>
 
         <div id="formulario-reserva" class="oculto">
             <h2 id="titulo-sucursal"></h2>
-            <div class="card">
             <form>
-                <input type="text" placeholder="Tu nombre" required>
-                <input type="text" placeholder="Tu apellido" required>
-                <input type="number" placeholder="Cantidad de personas" required>
-                <input type="date" required>
-                <button type="submit">Reserva</button>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="cantidad">Cantidad de Personas:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <button type="submit" class="boton-reservar">Reservar</button>
             </form>
-            </div>
+        </div>
+        <div class="info-importante">
+            <p>Para realizar reservaciones en nuestros locales haga click en los siguientes links</p>
+            <p>Las reservas se pueden efectuar desde el día anterior a la fecha requerida</p>
+            <p>Tolerancia 15 minutos</p>
+            <p>Para ser ubicados deberá estar presente el 50% del grupo.</p>
         </div>
     </section>
 
@@ -93,10 +105,8 @@
                 const sucursal = boton.getAttribute('data-sucursal');
                 tituloSucursal.textContent = `Sucursal de ${sucursal}`;
 
-                // Ocultar botones
                 botonesSucursales.style.display = 'none';
 
-                // Mostrar formulario con animación
                 formulario.classList.remove('oculto');
                 formulario.style.display = 'block';
                 formulario.style.animation = 'aparecer 0.5s forwards';

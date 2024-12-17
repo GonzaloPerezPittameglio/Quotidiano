@@ -258,66 +258,36 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.reserva-container .titulo {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 5px;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-}
-.reserva-container .subtitulo {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 30px;
-  text-align: center;
-}
-.reserva-container .cards-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-.reserva-container .cards-container .card {
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
+#reservar {
+  max-width: 500px;
+  margin: 0 auto;
   padding: 20px;
-  width: 280px;
+}
+#reservar h1 {
   text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
 }
-.reserva-container .cards-container .card .card h3 {
-  margin-bottom: 15px;
-  font-size: 1.3rem;
-  color: #333;
-}
-.reserva-container .cards-container .card .forn input {
+#reservar #botones-sucursales .boton-sucursal {
+  display: block;
   width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-.reserva-container .cards-container .card .forn button {
-  width: 100%;
-  padding: 10px;
-  background-color: #333;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
-.reserva-container .cards-container .card .forn button:hover {
-  background-color: #555;
-}
-.reserva-container .info-reserva {
-  margin-top: 20px;
-  font-size: 1rem;
-  color: black;
-  line-height: 1.5;
+#reservar #formulario-reserva {
+  display: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .encuentranos {
