@@ -6,7 +6,7 @@
     .h1 {
         text-align: center;
         margin: 20px 0;
-        font-size: 2rem;
+        font-size: nth($font-size, 1);
     }
 
     #botones-sucursales {
@@ -16,30 +16,28 @@
             width: 100%;
             margin: 10px 0;
             padding: 15px;
-            font-size: 1.2rem;
-            background-color: black;
-            color: white;
+            font-size: nth($font-size, 10);
+            background-color: $color-1;
+            color: $color-2;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 10px $color-8;
         }
 
         .boton-sucursal:hover {
-            background-color: gray;
+            background-color: $color-4;
         }
 
     }
 
     #formulario-reserva {
         display: none;
-        background-color: white;
+        background-color: $color-2;
         padding: 20px;
         border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-
-        #titulo-sucursal {}
+        box-shadow: 0 0 10px $color-8;
 
     }
 
@@ -61,16 +59,16 @@
         input {
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
+            border: 1px solid $color-10;
             border-radius: 5px;
 
         }
 
         .boton-reserva {
             padding: 15px;
-            background-color: black;
-            color: white;
-            font-size: 1rem;
+            background-color: $color-1;
+            color: $color-2;
+            font-size: nth($font-size, 8);
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -78,7 +76,7 @@
         }
 
         .boton-reservar:hover {
-            background-color: gray;
+            background-color: $color-4;
         }
 
     }
