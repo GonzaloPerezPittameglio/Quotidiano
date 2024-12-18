@@ -16,7 +16,7 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 0.5rem;
-        font-size: 1.1rem;
+        font-size: nth($font-size, 7);
         padding: 0.5rem;
         border-radius: 4px;
         transition: background-color 0.3s ease;
@@ -28,8 +28,8 @@
 
     h2 {
         margin-bottom: 1rem;
-        font-size: 1.5rem;
-        border-bottom: 2px solid #d2b48c;
+        font-size:  nth($font-size, 9);
+        border-bottom: 2px solid $color-12;
         padding-bottom: 0.5rem;
     }
 }

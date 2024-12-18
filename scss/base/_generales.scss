@@ -31,3 +31,12 @@ body {
     box-shadow: 0 4px 6px $color-8;
     text-align: center;
 }
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

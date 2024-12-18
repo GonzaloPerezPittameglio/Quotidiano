@@ -42,6 +42,14 @@ body {
   text-align: center;
 }
 
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .header {
   background-color: beige;
   padding: 15px;
@@ -258,17 +266,17 @@ body {
   padding-bottom: 0.5rem;
 }
 
-#reservar {
+#reserva {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
 }
-#reservar h1 {
+#reserva .h1 {
   text-align: center;
   margin: 20px 0;
   font-size: 2rem;
 }
-#reservar #botones-sucursales .boton-sucursal {
+#reserva #botones-sucursales .boton-sucursal {
   display: block;
   width: 100%;
   margin: 10px 0;
@@ -282,12 +290,48 @@ body {
   transition: background-color 0.3s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
-#reservar #formulario-reserva {
+#reserva #botones-sucursales .boton-sucursal:hover {
+  background-color: gray;
+}
+#reserva #formulario-reserva {
   display: none;
   background-color: white;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+#reserva .oculto {
+  display: none;
+}
+#reserva form {
+  display: flex;
+  flex-direction: column;
+}
+#reserva form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+#reserva form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#reserva form .boton-reserva {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#reserva form .boton-reservar:hover {
+  background-color: gray;
+}
+#reserva .info-importante {
+  margin-top: 50px;
 }
 
 .encuentranos {
